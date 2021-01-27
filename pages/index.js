@@ -1,21 +1,13 @@
+import { useState } from "react";
+
 import styled from "styled-components";
 import db from "../db.json";
 import Widget from "../src/components/widget";
 import Footer from "../src/components/footer";
+import QuizLogo from "../src/components/QuizLogo";
 import GitHubCorner from "../src/components/github_corner";
 import QuizBackground from "../src/components/QuizBackground";
-
-const Title = styled.h1`
-  font-size: 50px;
-  color: ${({ theme }) => theme.colors.primary};
-`;
-
-const BackgroundImage = styled.div`
-  background-image: url(${db.bg});
-  flex: 1;
-  background-size: cover;
-  background-position: center;
-`;
+import { useRouter } from "next/router";
 
 const QuizContainer = styled.div`
   width: 100%;
@@ -29,14 +21,42 @@ const QuizContainer = styled.div`
 `;
 
 export default function Home() {
+  const router = useRouter();
+  const [name, setName] = useState("");
+
   return (
     <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
+        <QuizLogo />
         <Widget>
-          <Widget.Header>Searching to the dead Pixel</Widget.Header>
-          <Widget.Content>lorem</Widget.Content>
+          <Widget.Header>Você conheçe o Halloween? 🎃</Widget.Header>
+          <Widget.Content>
+            <form
+              onSubmit={function (event) {
+                event.preventDefault();
+                router.push(`/quiz?name=${name}`);
+                console.log("submitting via react");
+              }}
+            >
+              <input
+                placeholder="Diga o seu nome"
+                onChange={function (event) {
+                  setName(event.target.value);
+                }}
+              ></input>
+              <button type="submit" disabled={name.length === 0}>
+                Jogar {name}
+              </button>
+            </form>
+          </Widget.Content>
         </Widget>
-        <Widget>Galera</Widget>
+        <Widget>
+          <Widget.Content>
+            <h1> Quizes da Galera</h1>
+            <p>Oi</p>
+          </Widget.Content>
+        </Widget>
+        <Footer />
       </QuizContainer>
       <GitHubCorner
         projectUrl={"https://github.com/LucasKuhn/aluraquiz"}
