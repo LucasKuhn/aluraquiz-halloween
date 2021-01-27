@@ -38,7 +38,9 @@ export default function Home() {
         </Widget>
         <Widget>Galera</Widget>
       </QuizContainer>
-      <GitHubCorner projectUrl={"oi"}></GitHubCorner>
+      <GitHubCorner
+        projectUrl={"https://github.com/LucasKuhn/aluraquiz"}
+      ></GitHubCorner>
     </QuizBackground>
   );
 }
