@@ -33,12 +33,20 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
+        <meta
+          name="description"
+          content="Quiz app using Next.js and StyledComponents"
+        />
+
         <meta property="og:locale" content="pt_BR" />
 
         <meta property="og:title" content="AlluraQuiz Halloween" />
         <meta property="og:site_name" content="PatoQuiz" />
 
-        <meta property="og:description" content="Next.js + StyledComponents" />
+        <meta
+          property="og:description"
+          content="Quiz app using Next.js and StyledComponents"
+        />
         <meta property="og:image" content={db.bg} />
         <meta property="og:image:type" content="image/jpg" />
         <meta property="og:image:width" content="1920" />
