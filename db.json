@@ -4,25 +4,59 @@
     "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
-        "description": "Essa é pra aquecer",
-        "answer": 2,
+        "image": "https://images.immediate.co.uk/production/volatile/sites/7/2018/10/GettyImages-629451543-e514f5e-e1540381267837.jpg?webp=true&quality=45&crop=413px%2C8px%2C2326px%2C1549px&resize=1240%2C826",
+        "title": "O Halloween surgiu como festival Celta, que marcava a passagem do verão para o inverno. Qual foi o papa que trouxe essa data para o calendário cristão?",
+        "description": "A idéia era ter uma festa cristã no mesmo dia e atrais mais fiéis",
+        "answer": 0,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "Gregory III (731–741)",
+          "Leo III (795–816)",
+          "Gregory IV (827–844)"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
+        "image": "https://estaticos.muyhistoria.es/media/cache/760x570_thumb/uploads/images/pyr/54941b888c770c961fd6e047/fobia.jpg",
+        "title": "Samhainofobia é o medo de:",
+        "description": "Boo",
+        "answer": 3,
+        "alternatives": [
+           "Fantasmas",
+           "Abóboras",
+           "Escuridão",
+           "Halloween"
+        ]
+      },
+      {
+        "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/witch-oz-pinterest-1549441103.jpg?crop=1xw:1xh;center,top&resize=320:*",
+        "title": "Os medievais tinham um motivo especial para ter medo de bruxas. O motivo era:",
+        "description": "Boo",
+        "answer": 2,
+        "alternatives": [
+           "Pensavam que bruxas podiam tornar eles inférteis",
+           "Pensavam que ao encontrar uma bruxa no Halloween, ficariam enfeitiçatos por 1 ano",
+           "Pensavam que bruxas podiam roubar suas genitais"
+        ]
+      },
+      {
+        "image": "https://www.irishtimes.com/polopoly_fs/1.3674177.1540389785!/image/image.jpg_gen/derivatives/box_620_330/image.jpg",
+        "title": "Usar fantasias é algo comum no Halloween. Qual a origem dessa prática?",
+        "description": "Boo",
         "answer": 0,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+           "Afastar espíritos dos mortos",
+           "Pedir gostosuras ou travessuras para os amigos",
+           "Fazer atuações para entretenimento"
+        ]
+      },
+      {
+        "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F9%2F2019%2F10%2Fhalloween-candy-taste-test-ft-blog1019.jpg",
+        "title": "Qual o doce mais consumido no Halloween?",
+        "description": "Boo",
+        "answer": 2,
+        "alternatives": [
+           "Chiclete",
+           "Bala",
+           "Chocolate"
         ]
       }
     ],
@@ -34,8 +68,8 @@
         "primary": "#e79e4f",
         "secondary": "#a05344",
         "mainBg": "#321f28",
-        "titleColor": "734046",
-        "contrastText": "#9d5861",
+        "titleColor": "#734046",
+        "contrastText": "#e0aca4",
         "wrong": "#FF5722",
         "success": "#4CAF50"
       },

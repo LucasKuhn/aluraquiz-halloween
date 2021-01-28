@@ -1,24 +1,15 @@
 import { useState } from "react";
 
-import styled from "styled-components";
 import db from "../db.json";
 import Widget from "../src/components/widget";
 import Footer from "../src/components/footer";
 import QuizLogo from "../src/components/QuizLogo";
 import GitHubCorner from "../src/components/github_corner";
 import QuizBackground from "../src/components/QuizBackground";
+import Input from "../src/components/input";
+import Button from "../src/components/button";
 import { useRouter } from "next/router";
-
-const QuizContainer = styled.div`
-  width: 100%;
-  max-width: 350px;
-  padding-top: 45px;
-  margin: auto 10%;
-  @media screen and (max-width: 500px) {
-    margin: auto;
-    padding: 15px;
-  }
-`;
+import QuizContainer from "../src/components/QuizContainer";
 
 export default function Home() {
   const router = useRouter();
@@ -38,15 +29,14 @@ export default function Home() {
                 console.log("submitting via react");
               }}
             >
-              <input
+              <Input
+                name="username"
                 placeholder="Diga o seu nome"
-                onChange={function (event) {
-                  setName(event.target.value);
-                }}
-              ></input>
-              <button type="submit" disabled={name.length === 0}>
+                onChange={(event) => setName(event.target.value)}
+              ></Input>
+              <Button type="submit" disabled={name.length === 0}>
                 Jogar {name}
-              </button>
+              </Button>
             </form>
           </Widget.Content>
         </Widget>
