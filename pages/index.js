@@ -20,7 +20,7 @@ export default function Home() {
       <QuizContainer>
         <QuizLogo />
         <Widget>
-          <Widget.Header>Você conheçe o Halloween? 🎃</Widget.Header>
+          <Widget.Header>🎃 Quiz de Halloween 🎃</Widget.Header>
           <Widget.Content>
             <form
               onSubmit={function (event) {
@@ -43,7 +43,7 @@ export default function Home() {
         <Widget>
           <Widget.Content>
             <h1> Quizes da Galera</h1>
-            <p>Oi</p>
+            <p></p>
           </Widget.Content>
         </Widget>
         <Footer />
