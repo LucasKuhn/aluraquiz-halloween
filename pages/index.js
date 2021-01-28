@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import db from "../db.json";
-import Widget from "../src/components/widget";
+import Widget from "../src/components/Widget";
 import Footer from "../src/components/footer";
 import QuizLogo from "../src/components/QuizLogo";
 import GitHubCorner from "../src/components/github_corner";
