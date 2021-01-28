@@ -2,12 +2,12 @@ import { useState } from "react";
 
 import db from "../db.json";
 import Widget from "../src/components/Widget";
-import Footer from "../src/components/footer";
+import Footer from "../src/components/Footer";
 import QuizLogo from "../src/components/QuizLogo";
 import GitHubCorner from "../src/components/github_corner";
 import QuizBackground from "../src/components/QuizBackground";
-import Input from "../src/components/input";
-import Button from "../src/components/button";
+import Input from "../src/components/Input";
+import Button from "../src/components/Button";
 import { useRouter } from "next/router";
 import QuizContainer from "../src/components/QuizContainer";
 
