@@ -33,7 +33,7 @@ export default function QuizPage() {
     // fetch()...
     setTimeout(() => {
       setScreenState(screenStates.QUIZ);
-    }, 1000);
+    }, 600);
   }, []);
 
   function handleSubmit() {
@@ -142,7 +142,7 @@ function QuestionWidget({
               onSubmit();
               setIsQuestionSubmited(false);
               setSelectedAlternative(undefined);
-            }, 3 * 1000);
+            }, 1000);
           }}
         >
           <h3>{question.title}</h3>
