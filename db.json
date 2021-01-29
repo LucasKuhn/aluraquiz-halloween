@@ -61,14 +61,14 @@
       }
     ],
     "external": [
-      ""
+      "https://aluraquiz-css.omariosouto.vercel.app",
+      "https://quiz-alura.albertolucass.vercel.app/"
     ],
     "theme": {
       "colors": {
         "primary": "#de7402",
         "secondary": "#a05344",
         "mainBg": "#321f28",
-        "titleColor": "#734046",
         "contrastText": "#e0aca4",
         "wrong": "#FF5722",
         "success": "#4CAF50"

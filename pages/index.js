@@ -43,7 +43,20 @@ export default function Home() {
         <Widget>
           <Widget.Content>
             <h1> Quizes da Galera</h1>
-            <p></p>
+            <ul>
+              {db.external.map((linkExterno) => {
+                const [projectName, githubUser] = new URL(
+                  linkExterno
+                ).host.split(".");
+                return (
+                  <li key={linkExterno}>
+                    <Widget.Topic href={`quiz/${projectName}___${githubUser}`}>
+                      {projectName}/{githubUser}
+                    </Widget.Topic>
+                  </li>
+                );
+              })}
+            </ul>
           </Widget.Content>
         </Widget>
         <Footer />
