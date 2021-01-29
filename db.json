@@ -61,8 +61,8 @@
       }
     ],
     "external": [
-      "https://aluraquiz-css.omariosouto.vercel.app",
-      "https://quiz-alura.albertolucass.vercel.app/"
+      "https://disgust-quiz.arrivabeni.vercel.app",
+      "https://quiz-react.brenoha.vercel.app"
     ],
     "theme": {
       "colors": {
