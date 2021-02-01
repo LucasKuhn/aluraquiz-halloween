@@ -10,6 +10,7 @@ import Input from "../src/components/Input";
 import Button from "../src/components/Button";
 import { useRouter } from "next/router";
 import QuizContainer from "../src/components/QuizContainer";
+import Link from "../src/components/Link";
 
 export default function Home() {
   const router = useRouter();
@@ -50,7 +51,10 @@ export default function Home() {
                 ).host.split(".");
                 return (
                   <li key={linkExterno}>
-                    <Widget.Topic href={`quiz/${projectName}___${githubUser}`}>
+                    <Widget.Topic
+                      as={Link}
+                      href={`quiz/${projectName}___${githubUser}`}
+                    >
                       {projectName}/{githubUser}
                     </Widget.Topic>
                   </li>

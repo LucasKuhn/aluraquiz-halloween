@@ -7,6 +7,7 @@ import QuizBackground from "../../src/components/QuizBackground";
 import QuizContainer from "../../src/components/QuizContainer";
 import Button from "../../src/components/Button";
 import AlternativesForm from "../../src/components/AlternativesForm";
+import BackLinkArrow from "../components/BackLinkArrow";
 
 const screenStates = {
   QUIZ: "QUIZ",
@@ -118,6 +119,7 @@ function QuestionWidget({
   return (
     <Widget>
       <Widget.Header>
+        <BackLinkArrow href="/" />
         <h3>
           Pergunta {questionIndex} de {totalQuestions}
         </h3>
