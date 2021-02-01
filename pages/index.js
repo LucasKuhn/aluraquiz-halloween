@@ -12,6 +12,8 @@ import { useRouter } from "next/router";
 import QuizContainer from "../src/components/QuizContainer";
 import Link from "../src/components/Link";
 
+import { motion } from "framer-motion";
+
 export default function Home() {
   const router = useRouter();
   const [name, setName] = useState("");
@@ -20,7 +22,16 @@ export default function Home() {
     <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
         <QuizLogo />
-        <Widget>
+        <Widget
+          as={motion.section}
+          transition={{ duration: 0.3, delay: 0 }}
+          variants={{
+            show: { opacity: 1, y: 0 },
+            hidden: { opacity: 0, y: 100 },
+          }}
+          initial="hidden"
+          animate="show"
+        >
           <Widget.Header>🎃 Quiz de Halloween 🎃</Widget.Header>
           <Widget.Content>
             <form
@@ -41,7 +52,16 @@ export default function Home() {
             </form>
           </Widget.Content>
         </Widget>
-        <Widget>
+        <Widget
+          as={motion.section}
+          transition={{ duration: 0.3, delay: 0.4 }}
+          variants={{
+            show: { opacity: 1, y: 0 },
+            hidden: { opacity: 0, y: 100 },
+          }}
+          initial="hidden"
+          animate="show"
+        >
           <Widget.Content>
             <h1> Quizes da Galera</h1>
             <ul>
@@ -63,7 +83,16 @@ export default function Home() {
             </ul>
           </Widget.Content>
         </Widget>
-        <Footer />
+        <Footer
+          as={motion.section}
+          transition={{ duration: 0.3, delay: 0.8 }}
+          variants={{
+            show: { opacity: 1, y: 0 },
+            hidden: { opacity: 0, y: 100 },
+          }}
+          initial="hidden"
+          animate="show"
+        />
       </QuizContainer>
       <GitHubCorner
         projectUrl={"https://github.com/LucasKuhn/aluraquiz"}
